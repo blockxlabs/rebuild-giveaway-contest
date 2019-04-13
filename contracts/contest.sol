@@ -25,7 +25,7 @@ contract winners {
         return hash; 
     }
     function generateRandom() external onlyOwner {
-        number = uint256(keccak256(abi.encodePacked(block.timestamp, block.difficulty))) %entries;
+        number = (uint256(keccak256(abi.encodePacked(block.timestamp, block.difficulty))) %entries) + 1;
     }
     
     function getNumber() external view returns (uint) {
@@ -33,7 +33,7 @@ contract winners {
     }
     
     function setEntries(uint _entries) external onlyOwner {
-        entries = _entries - 1;
+        entries = _entries;
     }
     
     function getEntries() external view returns (uint) {
