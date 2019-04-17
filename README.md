@@ -5,3 +5,5 @@ The entrents will be given numbers based on the amount of entries won. This list
 Next we will generated a psudo-random number and the contestent who maps to that number will win. Contestents can only win one ticket if they win more than one we will select a new random number.
 
 If an individual has won a ticket already the previous individual will be the next winner.
+
+Contract address - [0x6aa794446c71bb45462e7cc87db73f446fd085a4](https://ropsten.etherscan.io/address/0x6aa794446c71bb45462e7cc87db73f446fd085a4)
